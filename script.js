@@ -1,6 +1,6 @@
 // ====== IMPORTANT ======
 // Paste your Google Apps Script "Web App" URL here:
-const PRICING_API_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const PRICING_API_URL = "https://script.google.com/macros/s/AKfycbxrAXL2Am5JyBYvPVsWzWvPIbkE8G0pmuWJcs1xNFH4GqVu5Bjj-CBC5W8ce2_s6SA/exec";
 
 // Optional: if you later add a Google Form endpoint for submissions, paste it here.
 // For now we just show a "sent" message (concept phase).
