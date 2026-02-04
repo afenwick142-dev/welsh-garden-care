@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welsh Garden Care</title>
+  <meta name="description" content="Professional garden care across South Wales. Maintenance plans and one-off services with clear guide pricing." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Clean, modern font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <div class="brand__mark" aria-hidden="true"></div>
+        <div class="brand__text">
+          <div class="brand__name">Welsh Garden Care</div>
+          <div class="brand__tag">South Wales</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a href="#pricing">Guide Pricing</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="btn btn--small">Get a Quote</a>
+      </nav>
+
+      <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" hidden>
+      <a href="#services">Services</a>
+      <a href="#plans">Plans</a>
+      <a href="#pricing">Guide Pricing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <div class="pill">Professional • Reliable • South Wales</div>
+          <h1>Transform your outdoor space with a team that does it properly.</h1>
+          <p class="lead">
+            From year-round maintenance plans to tidy-ups and pressure washing —
+            clear guide pricing, professional equipment, and a finish you’ll be proud of.
+          </p>
+
+          <div class="hero__actions">
+            <button class="btn" data-open-drawer="quote">Get a Quote</button>
+            <a class="btn btn--ghost" href="#plans">View Plans</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">Fast</div>
+              <div class="stat__lbl">responses</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Clean</div>
+              <div class="stat__lbl">finish</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Local</div>
+              <div class="stat__lbl">team</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card reveal">
+          <div class="heroImage" role="img" aria-label="Freshly maintained garden"></div>
+          <div class="hero__cardBody">
+            <div class="hero__cardTitle">Year-Round Availability</div>
+            <div class="hero__cardText">
+              Maintenance customers get priority slots — ideal through colder months.
+            </div>
+            <button class="btn btn--small" data-open-drawer="plan">Join a Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Our Services</h2>
+          <p>Professional garden care across South Wales — one-off jobs or regular upkeep.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__img img--lawn"></div>
+            <h3>Lawn Care</h3>
+            <p>Mowing, edging, and general lawn maintenance.</p>
+            <button class="btn btn--small" data-open-drawer="quote">Get a Quote</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__img img--hedge"></div>
+            <h3>Hedge Cutting</h3>
+            <p>Neat shaping, reductions, and ongoing hedge care.</p>
+            <button class="btn btn--small" data-open-drawer="quote">Get a Quote</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__img img--tidy"></div>
+            <h3>Garden Tidy-Ups</h3>
+            <p>Light to heavy tidy-ups with transparent waste bands.</p>
+            <button class="btn btn--small" data-open-drawer="quote">Get a Quote</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__img img--wash"></div>
+            <h3>Pressure Washing</h3>
+            <p>Patios, paths, and driveways cleaned to a high standard.</p>
+            <button class="btn btn--small" data-open-drawer="quote">Get a Quote</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__img img--gutter"></div>
+            <h3>Gutter Cleaning</h3>
+            <p>Clear blockages and keep gutters flowing properly.</p>
+            <button class="btn btn--small" data-open-drawer="quote">Get a Quote</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__img img--maint"></div>
+            <h3>General Maintenance</h3>
+            <p>Weeding, pruning, and seasonal garden care.</p>
+            <button class="btn btn--small" data-open-drawer="quote">Get a Quote</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Plans (Option 1: near top) -->
+    <section id="plans" class="section section--alt">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Year-Round Maintenance Plans</h2>
+          <p>Priority booking for regular customers — ideal through colder months.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="priceCard reveal">
+            <div class="priceCard__top">
+              <h3>Monthly Care</h3>
+              <div class="priceCard__price">from <span data-price-key="monthly_from">£60</span>/month</div>
+            </div>
+            <ul class="ticks">
+              <li>Priority slot</li>
+              <li>General tidy</li>
+              <li>Seasonal touch-ups</li>
+            </ul>
+            <button class="btn" data-open-drawer="plan">Join a Plan</button>
+          </article>
+
+          <article class="priceCard priceCard--featured reveal">
+            <div class="ribbon">Most Popular</div>
+            <div class="priceCard__top">
+              <h3>Fortnightly Care</h3>
+              <div class="priceCard__price">from <span data-price-key="fortnightly_from">£85</span>/month</div>
+            </div>
+            <ul class="ticks">
+              <li>Higher upkeep standard</li>
+              <li>Preferential add-ons</li>
+              <li>Priority slot</li>
+            </ul>
+            <button class="btn" data-open-drawer="plan">Join a Plan</button>
+          </article>
+
+          <article class="priceCard reveal">
+            <div class="priceCard__top">
+              <h3>Seasonal Plan</h3>
+              <div class="priceCard__price">from <span data-price-key="seasonal_from">£120</span>/season</div>
+            </div>
+            <ul class="ticks">
+              <li>One visit per season</li>
+              <li>Seasonal tidy focus</li>
+              <li>Year-round continuity</li>
+            </ul>
+            <button class="btn" data-open-drawer="plan">Join a Plan</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guide Pricing (Everest structure) -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Guide Pricing</h2>
+          <p>Clear guide prices — final quotes depend on garden size, access, and required work.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="priceCard reveal">
+            <div class="priceCard__top">
+              <h3>Lawn Care</h3>
+              <div class="priceCard__sub">Strimming & edging included</div>
+            </div>
+            <ul class="lines">
+              <li>Small garden: from <span data-price-key="lawn_small_from">£25</span></li>
+              <li>Medium garden: from <span data-price-key="lawn_medium_from">£35</span></li>
+              <li>Large garden: from <span data-price-key="lawn_large_from">£45</span></li>
+            </ul>
+            <button class="btn" data-open-drawer="quote">Get a Quote</button>
+          </article>
+
+          <article class="priceCard reveal">
+            <div class="priceCard__top">
+              <h3>Hedge Cutting</h3>
+              <div class="priceCard__sub">Overgrown hedges quoted on inspection</div>
+            </div>
+            <ul class="lines">
+              <li>Small hedge: from <span data-price-key="hedge_small_from">£30</span></li>
+              <li>Medium hedge: from <span data-price-key="hedge_medium_from">£45</span></li>
+              <li>Large / tall hedge: from <span data-price-key="hedge_large_from">£60</span></li>
+            </ul>
+            <button class="btn" data-open-drawer="quote">Get a Quote</button>
+          </article>
+
+          <article class="priceCard reveal">
+            <div class="priceCard__top">
+              <h3>General Maintenance</h3>
+              <div class="priceCard__sub">Weeding • pruning • seasonal tidy</div>
+            </div>
+            <ul class="lines">
+              <li>Weeding: from <span data-price-key="weeding_from">£30</span></li>
+              <li>Pruning & tidy-ups: from <span data-price-key="pruning_from">£30</span></li>
+              <li>Seasonal tidy-ups: from <span data-price-key="seasonal_tidy_from">£60</span></li>
+            </ul>
+            <button class="btn" data-open-drawer="quote">Get a Quote</button>
+          </article>
+        </div>
+
+        <div class="split split--2">
+          <article class="panel reveal">
+            <h3>Garden Tidy-Ups (Bands)</h3>
+            <p class="muted">Pricing increases based on condition + waste volume.</p>
+            <ul class="lines">
+              <li>Light tidy: <span data-price-key="tidy_light_min">£80</span>–<span data-price-key="tidy_light_max">£120</span></li>
+              <li>Medium tidy: <span data-price-key="tidy_medium_min">£120</span>–<span data-price-key="tidy_medium_max">£180</span></li>
+              <li>Heavy tidy: <span data-price-key="tidy_heavy_min">£180</span>–<span data-price-key="tidy_heavy_max">£300</span>+</li>
+            </ul>
+            <button class="btn btn--small" data-open-drawer="quote">Get a Quote</button>
+          </article>
+
+          <article class="panel reveal">
+            <h3>Waste Removal</h3>
+            <p class="muted">Transparent waste bands — customers understand why price moves.</p>
+            <ul class="lines">
+              <li>Small load: <span data-price-key="waste_small">£40</span></li>
+              <li>Medium load: <span data-price-key="waste_medium">£70</span></li>
+              <li>Large load: from <span data-price-key="waste_large_from">£100</span>+</li>
+            </ul>
+            <button class="btn btn--small" data-open-drawer="quote">Get a Quote</button>
+          </article>
+        </div>
+
+        <div class="split split--1">
+          <article class="panel reveal">
+            <h3>Pressure Washing</h3>
+            <ul class="lines">
+              <li>Patios / paths: <span data-price-key="patio_per_m2_min">£3</span>–<span data-price-key="patio_per_m2_max">£5</span> per m²</li>
+              <li>Driveways: <span data-price-key="driveway_per_m2_min">£4</span>–<span data-price-key="driveway_per_m2_max">£6</span> per m²</li>
+              <li>Re-sand & seal (optional): quoted</li>
+            </ul>
+            <button class="btn btn--small" data-open-drawer="quote">Get a Quote</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section section--alt">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Before & After</h2>
+          <p>Examples of the standard we aim for — clean edges, tidy finish, professional results.</p>
+        </div>
+
+        <div class="gallery">
+          <div class="gallery__img g1 reveal" aria-label="Before garden"></div>
+          <div class="gallery__img g2 reveal" aria-label="After garden"></div>
+          <div class="gallery__img g3 reveal" aria-label="Freshly cut lawn"></div>
+          <div class="gallery__img g4 reveal" aria-label="Neat hedge"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2>Ready to get started?</h2>
+            <p>Tap below and we’ll come back to you with a quote or plan options.</p>
+          </div>
+          <div class="cta__actions">
+            <button class="btn" data-open-drawer="quote">Get a Quote</button>
+            <button class="btn btn--ghost" data-open-drawer="plan">Join a Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">Welsh Garden Care</div>
+        <div class="footer__muted">South Wales • Professional garden care</div>
+      </div>
+      <div class="footer__links">
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a href="#pricing">Guide Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Overlay + Drawers -->
+  <div class="overlay" id="overlay" hidden></div>
+
+  <!-- Quote Drawer -->
+  <aside class="drawer" id="drawerQuote" aria-hidden="true">
+    <div class="drawer__top">
+      <div>
+        <div class="drawer__title">Request a Quote</div>
+        <div class="drawer__sub">Tell us what you need — we’ll get back to you.</div>
+      </div>
+      <button class="iconBtn" data-close-drawer aria-label="Close">✕</button>
+    </div>
+
+    <form class="form" id="quoteForm">
+      <label>
+        Name
+        <input name="name" required autocomplete="name" />
+      </label>
+
+      <label>
+        Postcode / Town
+        <input name="location" required autocomplete="postal-code" />
+      </label>
+
+      <label>
+        Phone or Email
+        <input name="contact" required />
+      </label>
+
+      <fieldset class="fieldset">
+        <legend>Services (optional)</legend>
+        <label class="check"><input type="checkbox" name="services" value="Lawn Care" /> Lawn Care</label>
+        <label class="check"><input type="checkbox" name="services" value="Hedge Cutting" /> Hedge Cutting</label>
+        <label class="check"><input type="checkbox" name="services" value="Garden Tidy-Up" /> Garden Tidy-Up</label>
+        <label class="check"><input type="checkbox" name="services" value="Pressure Washing" /> Pressure Washing</label>
+        <label class="check"><input type="checkbox" name="services" value="Waste Removal" /> Waste Removal</label>
+        <label class="check"><input type="checkbox" name="services" value="Gutter Cleaning" /> Gutter Cleaning</label>
+      </fieldset>
+
+      <label>
+        Notes
+        <textarea name="notes" rows="4" placeholder="Briefly describe the job (garden size, access, condition, etc.)"></textarea>
+      </label>
+
+      <button class="btn btn--full" type="submit">Send Request</button>
+
+      <p class="tiny muted">
+        Guide prices shown on site can be updated over time. Final quotes depend on size, access, and required work.
+      </p>
+    </form>
+  </aside>
+
+  <!-- Plan Drawer -->
+  <aside class="drawer" id="drawerPlan" aria-hidden="true">
+    <div class="drawer__top">
+      <div>
+        <div class="drawer__title">Join a Maintenance Plan</div>
+        <div class="drawer__sub">Priority booking for regular customers.</div>
+      </div>
+      <button class="iconBtn" data-close-drawer aria-label="Close">✕</button>
+    </div>
+
+    <form class="form" id="planForm">
+      <label>
+        Name
+        <input name="name" required autocomplete="name" />
+      </label>
+
+      <label>
+        Postcode / Town
+        <input name="location" required autocomplete="postal-code" />
+      </label>
+
+      <label>
+        Phone or Email
+        <input name="contact" required />
+      </label>
+
+      <label>
+        Plan
+        <select name="plan" required>
+          <option value="">Choose…</option>
+          <option value="Monthly Care">Monthly Care</option>
+          <option value="Fortnightly Care">Fortnightly Care</option>
+          <option value="Seasonal Plan">Seasonal Plan</option>
+        </select>
+      </label>
+
+      <label>
+        Garden size (rough)
+        <select name="size" required>
+          <option value="">Choose…</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </label>
+
+      <label>
+        Notes (optional)
+        <textarea name="notes" rows="3" placeholder="Anything we should know? (pets, access, priorities)"></textarea>
+      </label>
+
+      <button class="btn btn--full" type="submit">Send Plan Enquiry</button>
+      <p class="tiny muted">We’ll confirm final pricing before starting.</p>
+    </form>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
